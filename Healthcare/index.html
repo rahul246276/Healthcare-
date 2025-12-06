@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Expert physiotherapy services for pain relief, rehabilitation, and improved mobility. Book your appointment today.">
+    <title>PhysioWell - Professional Physiotherapy Services</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <div class="brand-icon me-2">
+                    <div class="logo-container">
+                        <i class="bi bi-heart-pulse-fill text-white logo-heart"></i>
+                        <i class="bi bi-activity text-white logo-activity"></i>
+                    </div>
+                </div>
+                <span class="fw-bold fs-4 brand-name">PhysioWell</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="team.html">Our Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="appointment.html">Book Appointment</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <a class="btn btn-primary" href="appointment.html">
+                            <i class="bi bi-telephone me-1"></i>Book Now
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+        <section class="hero-section">
+        <!-- Background Image -->
+        <div class="hero-background-image">
+            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=1920&h=1080&fit=crop&q=80" alt="Physiotherapy Treatment Session" class="hero-bg-img" loading="eager" onerror="this.onerror=null; this.style.display='none'; this.parentElement.style.background='linear-gradient(135deg, #10b981, #34d399)'">
+        </div>
+        
+        <!-- Overlay Gradient -->
+        <div class="hero-overlay"></div>
+        
+        
+        <!-- Content -->
+        <div class="container hero-container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-8 hero-content-col">
+                    <div class="hero-badge mb-3">
+                        <i class="bi bi-award-fill me-2"></i>
+                        <span>Trusted by 10,000+ Patients Worldwide</span>
+                    </div>
+                    <h1 class="hero-title fw-bold text-white mb-3">
+                        Restore Your Health,<br>
+                        <span class="gradient-text-white">Reclaim Your Life</span>
+                    </h1>
+                    <div class="hero-features-list mb-4">
+                        <span class="hero-feature-item"><i class="bi bi-check-circle-fill me-2"></i>15+ Years of Excellence</span>
+                        <span class="hero-feature-item"><i class="bi bi-check-circle-fill me-2"></i>State-of-the-Art Facilities</span>
+                        <span class="hero-feature-item"><i class="bi bi-check-circle-fill me-2"></i>95% Success Rate</span>
+                    </div>
+                    <div class="d-flex flex-column flex-sm-row gap-3 mb-4">
+                        <a href="appointment.html" class="btn btn-hero-primary shadow-lg px-4 py-2 fw-bold">
+                            <i class="bi bi-calendar-check-fill me-2"></i>Schedule Appointment
+                        </a>
+                        <a href="services.html" class="btn btn-hero-outline px-4 py-2 fw-bold">
+                            <i class="bi bi-arrow-right-circle-fill me-2"></i>Explore Services
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 mt-5 mt-lg-0">
+                    <!-- Feature Cards Grid -->
+                    <div class="hero-features-grid">
+                        <div class="hero-feature-card">
+                            <div class="feature-icon-large">
+                                <i class="bi bi-gift-fill"></i>
+                            </div>
+                            <h5 class="text-white fw-bold mb-2">Free Consultation</h5>
+                            <p class="text-white-50 small mb-0">Comprehensive initial assessment included with no obligation</p>
+                        </div>
+                        
+                        <div class="hero-feature-card">
+                            <div class="feature-icon-large">
+                                <i class="bi bi-shield-check-fill"></i>
+                            </div>
+                            <h5 class="text-white fw-bold mb-2">Insurance Accepted</h5>
+                            <p class="text-white-50 small mb-0">We accept most major insurance plans and offer flexible payment options</p>
+                        </div>
+                        
+                        <div class="hero-feature-card">
+                            <div class="feature-icon-large">
+                                <i class="bi bi-cpu-fill"></i>
+                            </div>
+                            <h5 class="text-white fw-bold mb-2">Modern Equipment</h5>
+                            <p class="text-white-50 small mb-0">Latest technology and evidence-based treatment methods</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-5 bg-light position-relative">
+        <div class="container">
+            <div class="text-center mb-5">
+                <div class="section-badge mb-3">
+                    <span class="badge-text">Why Choose Us</span>
+                </div>
+                <h2 class="display-4 fw-bold mb-3 gradient-text">Why Choose PhysioWell?</h2>
+                <p class="lead text-muted fs-4">We provide exceptional care with proven results and personalized treatment plans</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card h-100">
+                        <div class="feature-icon mb-4">
+                            <i class="bi bi-people-fill"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Expert Team</h4>
+                        <p class="text-muted mb-0">Our team consists of certified physiotherapists with 15+ years of combined experience, continuously trained in the latest techniques and evidence-based practices.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card h-100">
+                        <div class="feature-icon mb-4">
+                            <i class="bi bi-trophy-fill"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Proven Results</h4>
+                        <p class="text-muted mb-0">With over 10,000 successful rehabilitation cases and a 95% success rate, we have a track record of helping patients achieve their recovery goals.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card h-100">
+                        <div class="feature-icon mb-4">
+                            <i class="bi bi-clock-fill"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Flexible Hours</h4>
+                        <p class="text-muted mb-0">We offer convenient appointment times including evenings and weekends to fit your busy schedule. Same-day appointments available for urgent cases.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card h-100">
+                        <div class="feature-icon mb-4">
+                            <i class="bi bi-heart-fill"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Personalized Care</h4>
+                        <p class="text-muted mb-0">Every patient receives a customized treatment plan tailored to their specific condition, goals, and lifestyle for optimal recovery outcomes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Preview -->
+    <!-- Services Section -->
+    <section class="services-section py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <div class="section-badge mb-3">
+                    <i class="bi bi-activity me-2"></i>
+                    <span>Our Services</span>
+                </div>
+                <h2 class="display-4 fw-bold mb-3 gradient-text">Comprehensive Physiotherapy Solutions</h2>
+                <p class="lead text-muted mx-auto" style="max-width: 700px;">Expert care tailored to your needs. From sports injuries to neurological rehabilitation, we provide evidence-based treatments to help you recover and thrive.</p>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Service 1 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card-modern h-100">
+                        <div class="service-image-wrapper-modern">
+                            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=400&fit=crop&q=80" alt="Sports Injury Rehabilitation" class="service-image-modern" loading="lazy" onerror="this.onerror=null; this.style.background='linear-gradient(135deg, #10b981, #34d399)'; this.style.minHeight='220px'">
+                            <div class="service-overlay-modern">
+                                <div class="service-icon-modern">
+                                    <i class="bi bi-trophy-fill"></i>
+                                </div>
+                            </div>
+                            <div class="service-badge-modern">
+                                <span>Popular</span>
+                            </div>
+                        </div>
+                        <div class="service-content-modern">
+                            <h4 class="service-title-modern">Sports Injury Rehabilitation</h4>
+                            <p class="service-description-modern">Specialized treatment for athletes and active individuals to recover from injuries and enhance performance.</p>
+                            <div class="service-features-modern">
+                                <span class="feature-tag"><i class="bi bi-check-circle me-1"></i>ACL Recovery</span>
+                                <span class="feature-tag"><i class="bi bi-check-circle me-1"></i>Performance</span>
+                            </div>
+                            <div class="service-footer-modern">
+                                <div class="service-price-modern">
+                                    <span class="price-from">From</span>
+                                    <span class="price-amount-modern">₹800</span>
+                                    <span class="price-unit">/session</span>
+                                </div>
+                                <a href="services.html#sports" class="service-link-modern">
+                                    Learn More <i class="bi bi-arrow-right ms-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card-modern h-100">
+                        <div class="service-image-wrapper-modern">
+                            <img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1?w=600&h=400&fit=crop&q=80" alt="Orthopedic Physiotherapy" class="service-image-modern" loading="lazy" onerror="this.onerror=null; this.style.background='linear-gradient(135deg, #10b981, #34d399)'; this.style.minHeight='220px'">
+                            <div class="service-overlay-modern">
+                                <div class="service-icon-modern">
+                                    <i class="bi bi-bone"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-content-modern">
+                            <h4 class="service-title-modern">Orthopedic Physiotherapy</h4>
+                            <p class="service-description-modern">Treatment for bone, joint, and muscle conditions to restore mobility and reduce pain.</p>
+                            <div class="service-features-modern">
+                                <span class="feature-tag"><i class="bi bi-check-circle me-1"></i>Post-Surgery</span>
+                                <span class="feature-tag"><i class="bi bi-check-circle me-1"></i>Arthritis</span>
+                            </div>
+                            <div class="service-footer-modern">
+                                <div class="service-price-modern">
+                                    <span class="price-from">From</span>
+                                    <span class="price-amount-modern">₹750</span>
+                                    <span class="price-unit">/session</span>
+                                </div>
+                                <a href="services.html#orthopedic" class="service-link-modern">
+                                    Learn More <i class="bi bi-arrow-right ms-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card-modern h-100">
+                        <div class="service-image-wrapper-modern">
+                            <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=600&h=400&fit=crop&q=80" alt="Neurological Rehabilitation" class="service-image-modern" loading="lazy" onerror="this.onerror=null; this.style.background='linear-gradient(135deg, #10b981, #34d399)'; this.style.minHeight='220px'">
+                            <div class="service-overlay-modern">
+                                <div class="service-icon-modern">
+                                    <i class="bi bi-brain"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-content-modern">
+                            <h4 class="service-title-modern">Neurological Rehabilitation</h4>
+                            <p class="service-description-modern">Support for stroke, Parkinson's, and neurological conditions to improve function and independence.</p>
+                            <div class="service-features-modern">
+                                <span class="feature-tag"><i class="bi bi-check-circle me-1"></i>Stroke Rehab</span>
+                                <span class="feature-tag"><i class="bi bi-check-circle me-1"></i>Balance</span>
+                            </div>
+                            <div class="service-footer-modern">
+                                <div class="service-price-modern">
+                                    <span class="price-from">From</span>
+                                    <span class="price-amount-modern">₹900</span>
+                                    <span class="price-unit">/session</span>
+                                </div>
+                                <a href="services.html#neurological" class="service-link-modern">
+                                    Learn More <i class="bi bi-arrow-right ms-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card-modern h-100">
+                        <div class="service-image-wrapper-modern">
+                            <img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=600&h=400&fit=crop&q=80" alt="Pediatric Physiotherapy" class="service-image-modern" loading="lazy" onerror="this.onerror=null; this.style.background='linear-gradient(135deg, #10b981, #34d399)'; this.style.minHeight='220px'">
+                            <div class="service-overlay-modern">
+                                <div class="service-icon-modern">
+                                    <i class="bi bi-heart-fill"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-content-modern">
+                            <h4 class="service-title-modern">Pediatric Physiotherapy</h4>
+                            <p class="service-description-modern">Specialized care for children and developmental issues to help them reach their full potential.</p>
+                            <div class="service-features-modern">
+                                <span class="feature-tag"><i class="bi bi-check-circle me-1"></i>Development</span>
+                                <span class="feature-tag"><i class="bi bi-check-circle me-1"></i>Play-Based</span>
+                            </div>
+                            <div class="service-footer-modern">
+                                <div class="service-price-modern">
+                                    <span class="price-from">From</span>
+                                    <span class="price-amount-modern">₹850</span>
+                                    <span class="price-unit">/session</span>
+                                </div>
+                                <a href="services.html#pediatric" class="service-link-modern">
+                                    Learn More <i class="bi bi-arrow-right ms-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- View All Services Button -->
+            <div class="text-center mt-5">
+                <a href="services.html" class="btn btn-primary btn-lg px-5 py-3">
+                    <i class="bi bi-grid-3x3-gap me-2"></i>View All Services
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <div class="section-badge mb-3">
+                    <i class="bi bi-star-fill me-2"></i>
+                    <span>Patient Reviews</span>
+                </div>
+                <h2 class="display-4 fw-bold mb-3 gradient-text">What Our Patients Say</h2>
+                <p class="lead text-muted mx-auto" style="max-width: 700px;">Real stories from real people who found healing and recovery at PhysioWell</p>
+            </div>
+            
+            <!-- Testimonials Carousel -->
+            <div class="testimonials-carousel-wrapper">
+                <button class="testimonial-nav-btn testimonial-prev" aria-label="Previous testimonial">
+                    <i class="bi bi-chevron-left"></i>
+                </button>
+                
+                <div class="testimonials-carousel">
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card-modern">
+                            <div class="testimonial-rating">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <p class="testimonial-text">"PhysioWell helped me recover from my knee injury completely. Dr. Priya Sharma's expertise and personalized care made all the difference. I'm back to playing cricket!"</p>
+                            <div class="testimonial-author">
+                                <img src="indianperson1.jpg" alt="Rajesh Kumar - Indian Patient" class="testimonial-avatar" loading="lazy" onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Rajesh+Kumar&size=100&background=10b981&color=fff&bold=true&font-size=0.5'">
+                                <div class="testimonial-author-info">
+                                    <h5 class="testimonial-name">Rajesh Kumar</h5>
+                                    <p class="testimonial-location"><i class="bi bi-geo-alt-fill me-1"></i>Mumbai, Maharashtra</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card-modern">
+                            <div class="testimonial-rating">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <p class="testimonial-text">"After my stroke, I thought I'd never walk again. The neurological rehabilitation program at PhysioWell, especially with Dr. Rajesh Kumar, gave me my independence back. Highly recommended!"</p>
+                            <div class="testimonial-author">
+                                <img src="indianperson2.jpg" alt="Anjali Patel - Indian Patient" class="testimonial-avatar" loading="lazy" onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Anjali+Patel&size=100&background=10b981&color=fff&bold=true&font-size=0.5'">
+                                <div class="testimonial-author-info">
+                                    <h5 class="testimonial-name">Anjali Patel</h5>
+                                    <p class="testimonial-location"><i class="bi bi-geo-alt-fill me-1"></i>Pune, Maharashtra</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card-modern">
+                            <div class="testimonial-rating">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <p class="testimonial-text">"The team at PhysioWell is amazing! They helped my 8-year-old son with his developmental delays. Dr. Anjali Patel's play-based therapy approach worked wonders. Thank you!"</p>
+                            <div class="testimonial-author">
+                                <img src="indianperson3.jpg" alt="Vikram Singh - Indian Patient" class="testimonial-avatar" loading="lazy" onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Vikram+Singh&size=100&background=10b981&color=fff&bold=true&font-size=0.5'">
+                                <div class="testimonial-author-info">
+                                    <h5 class="testimonial-name">Vikram Singh</h5>
+                                    <p class="testimonial-location"><i class="bi bi-geo-alt-fill me-1"></i>Hyderabad, Telangana</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card-modern">
+                            <div class="testimonial-rating">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <p class="testimonial-text">"I had chronic back pain for years. Dr. Meera Reddy's pain management techniques and manual therapy sessions completely resolved my issue. The staff is very professional and caring."</p>
+                            <div class="testimonial-author">
+                                <img src="indianperson4.jpg" alt="Kavita Desai - Indian Patient" class="testimonial-avatar" loading="lazy" onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Kavita+Desai&size=100&background=10b981&color=fff&bold=true&font-size=0.5'">
+                                <div class="testimonial-author-info">
+                                    <h5 class="testimonial-name">Kavita Desai</h5>
+                                    <p class="testimonial-location"><i class="bi bi-geo-alt-fill me-1"></i>Delhi, NCR</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card-modern">
+                            <div class="testimonial-rating">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <p class="testimonial-text">"As a professional athlete, I needed quick recovery from my shoulder injury. Dr. Vikram Singh's sports rehabilitation program got me back in the game in record time. Excellent facility!"</p>
+                            <div class="testimonial-author">
+                                <img src="indianperson5.jpg" alt="Neha Sharma - Indian Patient" class="testimonial-avatar" loading="lazy" onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Neha+Sharma&size=100&background=10b981&color=fff&bold=true&font-size=0.5'">
+                                <div class="testimonial-author-info">
+                                    <h5 class="testimonial-name">Neha Sharma</h5>
+                                    <p class="testimonial-location"><i class="bi bi-geo-alt-fill me-1"></i>Bangalore, Karnataka</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card-modern">
+                            <div class="testimonial-rating">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <p class="testimonial-text">"After my hip replacement surgery, the orthopedic physiotherapy at PhysioWell was crucial for my recovery. The team guided me through every step. I'm walking without any support now!"</p>
+                            <div class="testimonial-author">
+                                <img src="indianperson2.jpg" alt="Priya Patel - Indian Patient" class="testimonial-avatar" loading="lazy" onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Priya+Patel&size=100&background=10b981&color=fff&bold=true&font-size=0.5'">
+                                <div class="testimonial-author-info">
+                                    <h5 class="testimonial-name">Priya Patel</h5>
+                                    <p class="testimonial-location"><i class="bi bi-geo-alt-fill me-1"></i>Ahmedabad, Gujarat</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="testimonial-nav-btn testimonial-next" aria-label="Next testimonial">
+                    <i class="bi bi-chevron-right"></i>
+                </button>
+            </div>
+            
+            <!-- Carousel Indicators -->
+            <div class="testimonial-indicators">
+                <span class="indicator active" data-slide="0"></span>
+                <span class="indicator" data-slide="1"></span>
+                <span class="indicator" data-slide="2"></span>
+                <span class="indicator" data-slide="3"></span>
+                <span class="indicator" data-slide="4"></span>
+                <span class="indicator" data-slide="5"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container text-center">
+            <h2 class="display-5 fw-bold mb-3">Ready to Start Your Recovery Journey?</h2>
+            <p class="lead mb-4">Book your appointment today and take the first step towards better health</p>
+            <a href="appointment.html" class="btn btn-light btn-lg shadow-lg">
+                Schedule Appointment <i class="bi bi-arrow-right ms-2"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-main">
+        <div class="container">
+            <!-- Main Footer Content -->
+            <div class="row g-4 mb-4">
+                <!-- Company Info -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="footer-brand mb-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="brand-icon-footer me-3">
+                                <div class="logo-container">
+                                    <i class="bi bi-heart-pulse-fill text-white logo-heart"></i>
+                                    <i class="bi bi-activity text-white logo-activity"></i>
+                                </div>
+                            </div>
+                            <h4 class="fw-bold mb-0 text-white brand-name">PhysioWell</h4>
+                        </div>
+                        <p class="footer-text mb-4">Your trusted partner in physiotherapy and rehabilitation. With over 15 years of excellence, we're committed to helping you achieve optimal health, mobility, and quality of life through evidence-based treatments and personalized care.</p>
+                        <div class="footer-certifications mb-4">
+                            <h6 class="text-white fw-semibold mb-3">Certifications & Awards</h6>
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="cert-badge"><i class="bi bi-award me-1"></i>Licensed</span>
+                                <span class="cert-badge"><i class="bi bi-shield-check me-1"></i>Certified</span>
+                                <span class="cert-badge"><i class="bi bi-star-fill me-1"></i>5-Star Rated</span>
+                            </div>
+                        </div>
+                        <div class="footer-social">
+                            <h6 class="text-white fw-semibold mb-3">Follow Us</h6>
+                            <div class="social-links">
+                                <a href="#" class="social-link" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                                <a href="#" class="social-link" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+                                <a href="#" class="social-link" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                                <a href="#" class="social-link" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                                <a href="#" class="social-link" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div class="col-md-6 col-lg-2">
+                    <h5 class="footer-heading mb-4">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="bi bi-chevron-right me-2"></i>Home</a></li>
+                        <li><a href="about.html"><i class="bi bi-chevron-right me-2"></i>About Us</a></li>
+                        <li><a href="services.html"><i class="bi bi-chevron-right me-2"></i>Our Services</a></li>
+                        <li><a href="team.html"><i class="bi bi-chevron-right me-2"></i>Our Team</a></li>
+                        <li><a href="appointment.html"><i class="bi bi-chevron-right me-2"></i>Book Appointment</a></li>
+                        <li><a href="contact.html"><i class="bi bi-chevron-right me-2"></i>Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Services -->
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="footer-heading mb-4">Our Services</h5>
+                    <ul class="footer-links">
+                        <li><a href="services.html#sports"><i class="bi bi-chevron-right me-2"></i>Sports Injury Rehabilitation</a></li>
+                        <li><a href="services.html#orthopedic"><i class="bi bi-chevron-right me-2"></i>Orthopedic Physiotherapy</a></li>
+                        <li><a href="services.html#neurological"><i class="bi bi-chevron-right me-2"></i>Neurological Rehabilitation</a></li>
+                        <li><a href="services.html#pediatric"><i class="bi bi-chevron-right me-2"></i>Pediatric Physiotherapy</a></li>
+                        <li><a href="services.html"><i class="bi bi-chevron-right me-2"></i>Pain Management</a></li>
+                        <li><a href="services.html"><i class="bi bi-chevron-right me-2"></i>Cardiac Rehabilitation</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="footer-heading mb-4">Contact Information</h5>
+                    <ul class="footer-contact">
+                        <li>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <strong>Address</strong>
+                                    <p>123 Health Street, Medical District<br>Mumbai, Maharashtra 400001<br>India</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="bi bi-telephone-fill"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <strong>Phone</strong>
+                                    <p><a href="tel:+919876543210">+91 98765 43210</a><br><a href="tel:+919876543211">+91 98765 43211</a></p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="bi bi-envelope-fill"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <strong>Email</strong>
+                                    <p><a href="mailto:info@physiocare.in">info@physiocare.in</a><br><a href="mailto:appointments@physiocare.in">appointments@physiocare.in</a></p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="bi bi-clock-fill"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <strong>Office Hours</strong>
+                                    <p>Monday - Friday: 9:00 AM - 7:00 PM<br>Saturday: 9:00 AM - 3:00 PM<br>Sunday: Closed</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Newsletter Section -->
+            <div class="footer-newsletter">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mb-3 mb-lg-0">
+                        <h5 class="text-white fw-bold mb-2"><i class="bi bi-envelope-paper me-2"></i>Subscribe to Our Newsletter</h5>
+                        <p class="footer-text mb-0">Get health tips, treatment updates, and exclusive offers delivered to your inbox.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <form class="newsletter-form">
+                            <div class="input-group">
+                                <input type="email" class="form-control newsletter-input" placeholder="Enter your email address" required>
+                                <button class="btn newsletter-btn" type="submit">
+                                    <i class="bi bi-send-fill me-2"></i>Subscribe
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="row align-items-center">
+                    <div class="col-md-6 mb-3 mb-md-0">
+                        <p class="mb-0 footer-text">
+                            &copy; <span id="currentYear"></span> <strong>PhysioWell</strong>. All rights reserved. | 
+                            <a href="#" class="footer-link">Privacy Policy</a> | 
+                            <a href="#" class="footer-link">Terms of Service</a> | 
+                            <a href="#" class="footer-link">Cookie Policy</a>
+                        </p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <p class="mb-0 footer-text">
+                            <i class="bi bi-heart-fill text-danger me-1"></i>Made with care for your health and wellness
+                        </p>
+                    </div>
+                </div>
+                <div class="row mt-3 pt-3 border-top border-secondary">
+                    <div class="col-12 text-center">
+                        <p class="mb-0 footer-text">
+                            Designed and developed by <strong class="text-white">Anra Solutions Pvt. Ltd.</strong>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="/main.js"></script>
+</body>
+</html>

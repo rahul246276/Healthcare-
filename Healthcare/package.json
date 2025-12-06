@@ -1,0 +1,13 @@
+{
+  "name": "physiowell",
+  "version": "1.0.0",
+  "description": "PhysioWell - Professional Physiotherapy Services Website",
+  "scripts": {},
+  "keywords": [
+    "physiotherapy",
+    "healthcare",
+    "static-site"
+  ],
+  "author": "",
+  "license": "MIT"
+}

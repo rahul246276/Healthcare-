@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Book your physiotherapy appointment online. Easy scheduling with our expert team.">
+    <title>Book Appointment - PhysioWell</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <div class="brand-icon me-2">
+                    <div class="logo-container">
+                        <i class="bi bi-heart-pulse-fill text-white logo-heart"></i>
+                        <i class="bi bi-activity text-white logo-activity"></i>
+                    </div>
+                </div>
+                <span class="fw-bold fs-4 brand-name">PhysioWell</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="team.html">Our Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="appointment.html">Book Appointment</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <a class="btn btn-primary" href="appointment.html">
+                            <i class="bi bi-telephone me-1"></i>Book Now
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Book Your Appointment</h1>
+            <p>Schedule a consultation with our expert physiotherapists</p>
+        </div>
+    </section>
+
+    <!-- Appointment Form -->
+    <section class="content-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card shadow-sm border-0 rounded-4">
+                        <div class="card-body p-4 p-md-5">
+                            <h2 class="mb-4">Appointment Request Form</h2>
+                            <p class="text-muted mb-4">Please fill out the form below and we'll contact you to confirm your appointment time.</p>
+                            
+                            <form id="appointmentForm" class="needs-validation" novalidate>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="firstName" class="form-label">First Name <span class="text-danger">*</span></label>
+                                        <input type="text" class="form-control" id="firstName" name="firstName" required>
+                                        <div class="invalid-feedback">
+                                            Please provide your first name.
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="lastName" class="form-label">Last Name <span class="text-danger">*</span></label>
+                                        <input type="text" class="form-control" id="lastName" name="lastName" required>
+                                        <div class="invalid-feedback">
+                                            Please provide your last name.
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
+                                        <input type="email" class="form-control" id="email" name="email" required>
+                                        <div class="invalid-feedback">
+                                            Please provide a valid email address.
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="phone" class="form-label">Phone Number <span class="text-danger">*</span></label>
+                                        <input type="tel" class="form-control" id="phone" name="phone" required>
+                                        <div class="invalid-feedback">
+                                            Please provide your phone number.
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="appointmentDate" class="form-label">Preferred Date <span class="text-danger">*</span></label>
+                                        <input type="date" class="form-control" id="appointmentDate" name="appointmentDate" required>
+                                        <div class="invalid-feedback">
+                                            Please select a preferred date.
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="appointmentTime" class="form-label">Preferred Time <span class="text-danger">*</span></label>
+                                        <select class="form-select" id="appointmentTime" name="appointmentTime" required>
+                                            <option value="">Select time</option>
+                                            <option value="09:00">9:00 AM</option>
+                                            <option value="10:00">10:00 AM</option>
+                                            <option value="11:00">11:00 AM</option>
+                                            <option value="12:00">12:00 PM</option>
+                                            <option value="13:00">1:00 PM</option>
+                                            <option value="14:00">2:00 PM</option>
+                                            <option value="15:00">3:00 PM</option>
+                                            <option value="16:00">4:00 PM</option>
+                                            <option value="17:00">5:00 PM</option>
+                                        </select>
+                                        <div class="invalid-feedback">
+                                            Please select a preferred time.
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="service" class="form-label">Service Type <span class="text-danger">*</span></label>
+                                        <select class="form-select" id="service" name="service" required>
+                                            <option value="">Select a service</option>
+                                            <option value="sports">Sports Injury Rehabilitation</option>
+                                            <option value="orthopedic">Orthopedic Physiotherapy</option>
+                                            <option value="neurological">Neurological Rehabilitation</option>
+                                            <option value="pediatric">Pediatric Physiotherapy</option>
+                                            <option value="pain">Pain Management</option>
+                                            <option value="gait">Gait Training</option>
+                                            <option value="cardiac">Cardiac Rehabilitation</option>
+                                            <option value="consultation">Initial Consultation</option>
+                                        </select>
+                                        <div class="invalid-feedback">
+                                            Please select a service type.
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="reason" class="form-label">Reason for Visit</label>
+                                        <textarea class="form-control" id="reason" name="reason" rows="4" placeholder="Please describe your condition or reason for seeking treatment..."></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="insurance" name="insurance">
+                                            <label class="form-check-label" for="insurance">
+                                                I have health insurance
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="terms" name="terms" required>
+                                            <label class="form-check-label" for="terms">
+                                                I agree to the <a href="#" class="text-primary">terms and conditions</a> <span class="text-danger">*</span>
+                                            </label>
+                                            <div class="invalid-feedback">
+                                                You must agree to the terms and conditions.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-primary btn-lg w-100">
+                                            Submit Appointment Request <i class="bi bi-arrow-right ms-2"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Pricing Information -->
+                    <div class="card shadow-sm border-0 rounded-4 mt-4">
+                        <div class="card-body p-4">
+                            <h4 class="fw-bold mb-4 text-primary"><i class="bi bi-currency-rupee me-2"></i>Our Pricing</h4>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="pricing-item">
+                                        <h6 class="fw-semibold mb-2">Initial Consultation</h6>
+                                        <p class="text-muted small mb-1">Comprehensive assessment</p>
+                                        <p class="h5 text-primary mb-0">₹500</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="pricing-item">
+                                        <h6 class="fw-semibold mb-2">Regular Session</h6>
+                                        <p class="text-muted small mb-1">Per session</p>
+                                        <p class="h5 text-primary mb-0">₹750 - ₹900</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="pricing-item">
+                                        <h6 class="fw-semibold mb-2">Package (10 Sessions)</h6>
+                                        <p class="text-muted small mb-1">Save up to ₹1,000</p>
+                                        <p class="h5 text-primary mb-0">₹6,500 - ₹8,000</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="pricing-item">
+                                        <h6 class="fw-semibold mb-2">Home Visit</h6>
+                                        <p class="text-muted small mb-1">Additional charges apply</p>
+                                        <p class="h5 text-primary mb-0">+₹500</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="alert alert-info mt-3 mb-0">
+                                <i class="bi bi-info-circle me-2"></i>
+                                <strong>Note:</strong> We accept all major insurance plans. Cashless treatment available for eligible patients.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Information -->
+                    <div class="row g-4 mt-4">
+                        <div class="col-md-4">
+                            <div class="contact-info-card">
+                                <i class="bi bi-telephone-fill"></i>
+                                <h5 class="fw-semibold mb-2">Call Us</h5>
+                                <p class="text-muted mb-0">+91 98765 43210</p>
+                                <p class="text-muted small mb-0">+91 98765 43211</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="contact-info-card">
+                                <i class="bi bi-envelope-fill"></i>
+                                <h5 class="fw-semibold mb-2">Email Us</h5>
+                                <p class="text-muted mb-0">info@physiocare.in</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="contact-info-card">
+                                <i class="bi bi-clock-fill"></i>
+                                <h5 class="fw-semibold mb-2">Office Hours</h5>
+                                <p class="text-muted mb-0">Mon-Fri: 9AM-7PM<br>Sat: 9AM-3PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <!-- Footer -->
+    <footer class="footer-main">
+        <div class="container">
+            <!-- Main Footer Content -->
+            <div class="row g-4 mb-4">
+                <!-- Company Info -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="footer-brand mb-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="brand-icon-footer me-3">
+                                <div class="logo-container">
+                                    <i class="bi bi-heart-pulse-fill text-white logo-heart"></i>
+                                    <i class="bi bi-activity text-white logo-activity"></i>
+                                </div>
+                            </div>
+                            <h4 class="fw-bold mb-0 text-white brand-name">PhysioWell</h4>
+                        </div>
+                        <p class="footer-text mb-4">Your trusted partner in physiotherapy and rehabilitation. With over 15 years of excellence, we're committed to helping you achieve optimal health, mobility, and quality of life through evidence-based treatments and personalized care.</p>
+                        <div class="footer-certifications mb-4">
+                            <h6 class="text-white fw-semibold mb-3">Certifications & Awards</h6>
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="cert-badge"><i class="bi bi-award me-1"></i>Licensed</span>
+                                <span class="cert-badge"><i class="bi bi-shield-check me-1"></i>Certified</span>
+                                <span class="cert-badge"><i class="bi bi-star-fill me-1"></i>5-Star Rated</span>
+                            </div>
+                        </div>
+                        <div class="footer-social">
+                            <h6 class="text-white fw-semibold mb-3">Follow Us</h6>
+                            <div class="social-links">
+                                <a href="#" class="social-link" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                                <a href="#" class="social-link" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+                                <a href="#" class="social-link" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                                <a href="#" class="social-link" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                                <a href="#" class="social-link" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div class="col-md-6 col-lg-2">
+                    <h5 class="footer-heading mb-4">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="bi bi-chevron-right me-2"></i>Home</a></li>
+                        <li><a href="about.html"><i class="bi bi-chevron-right me-2"></i>About Us</a></li>
+                        <li><a href="services.html"><i class="bi bi-chevron-right me-2"></i>Our Services</a></li>
+                        <li><a href="team.html"><i class="bi bi-chevron-right me-2"></i>Our Team</a></li>
+                        <li><a href="appointment.html"><i class="bi bi-chevron-right me-2"></i>Book Appointment</a></li>
+                        <li><a href="contact.html"><i class="bi bi-chevron-right me-2"></i>Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Services -->
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="footer-heading mb-4">Our Services</h5>
+                    <ul class="footer-links">
+                        <li><a href="services.html#sports"><i class="bi bi-chevron-right me-2"></i>Sports Injury Rehabilitation</a></li>
+                        <li><a href="services.html#orthopedic"><i class="bi bi-chevron-right me-2"></i>Orthopedic Physiotherapy</a></li>
+                        <li><a href="services.html#neurological"><i class="bi bi-chevron-right me-2"></i>Neurological Rehabilitation</a></li>
+                        <li><a href="services.html#pediatric"><i class="bi bi-chevron-right me-2"></i>Pediatric Physiotherapy</a></li>
+                        <li><a href="services.html"><i class="bi bi-chevron-right me-2"></i>Pain Management</a></li>
+                        <li><a href="services.html"><i class="bi bi-chevron-right me-2"></i>Cardiac Rehabilitation</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="footer-heading mb-4">Contact Information</h5>
+                    <ul class="footer-contact">
+                        <li>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <strong>Address</strong>
+                                    <p>123 Health Street, Medical District<br>Mumbai, Maharashtra 400001<br>India</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="bi bi-telephone-fill"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <strong>Phone</strong>
+                                    <p><a href="tel:+919876543210">+91 98765 43210</a><br><a href="tel:+919876543211">+91 98765 43211</a></p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="bi bi-envelope-fill"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <strong>Email</strong>
+                                    <p><a href="mailto:info@physiocare.in">info@physiocare.in</a><br><a href="mailto:appointments@physiocare.in">appointments@physiocare.in</a></p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="bi bi-clock-fill"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <strong>Office Hours</strong>
+                                    <p>Monday - Friday: 9:00 AM - 7:00 PM<br>Saturday: 9:00 AM - 3:00 PM<br>Sunday: Closed</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Newsletter Section -->
+            <div class="footer-newsletter">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mb-3 mb-lg-0">
+                        <h5 class="text-white fw-bold mb-2"><i class="bi bi-envelope-paper me-2"></i>Subscribe to Our Newsletter</h5>
+                        <p class="footer-text mb-0">Get health tips, treatment updates, and exclusive offers delivered to your inbox.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <form class="newsletter-form">
+                            <div class="input-group">
+                                <input type="email" class="form-control newsletter-input" placeholder="Enter your email address" required>
+                                <button class="btn newsletter-btn" type="submit">
+                                    <i class="bi bi-send-fill me-2"></i>Subscribe
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="row align-items-center">
+                    <div class="col-md-6 mb-3 mb-md-0">
+                        <p class="mb-0 footer-text">
+                            &copy; <span id="currentYear"></span> <strong>PhysioWell</strong>. All rights reserved. | 
+                            <a href="#" class="footer-link">Privacy Policy</a> | 
+                            <a href="#" class="footer-link">Terms of Service</a> | 
+                            <a href="#" class="footer-link">Cookie Policy</a>
+                        </p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <p class="mb-0 footer-text">
+                            <i class="bi bi-heart-fill text-danger me-1"></i>Made with care for your health and wellness
+                        </p>
+                    </div>
+                </div>
+                <div class="row mt-3 pt-3 border-top border-secondary">
+                    <div class="col-12 text-center">
+                        <p class="mb-0 footer-text">
+                            Designed and developed by <strong class="text-white">Anra Solutions Pvt. Ltd.</strong>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="/main.js"></script>
+</body>
+</html>
+
